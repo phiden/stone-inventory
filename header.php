@@ -37,3 +37,5 @@ $(document).ready(function() {
 </head>
 
 <body>
+
+<div id="global-wrapper">

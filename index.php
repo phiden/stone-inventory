@@ -5,6 +5,4 @@ Welcome to your own personal database of stones!!
 <a href="upload-stone.php">Upload a new stone</a>
 <a href="view-collection.php">View your collection.</a>
 
-</body>
-
-</html>
+<?include "footer.php"; ?>

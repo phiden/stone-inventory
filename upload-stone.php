@@ -1,7 +1,4 @@
 <? include ("header.php") ?>
-
-Hello world!
-
 <? include("manage_db.php") ?>
 
 	<form method="post" enctype="multipart/form-data">

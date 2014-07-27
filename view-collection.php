@@ -5,3 +5,5 @@
 	<? include("query_db.php") ?>
 	
 </div>
+
+<? include ("footer.php"); ?>
