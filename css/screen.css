@@ -234,4 +234,8 @@ footer {
   bottom:0;*/
   font-size: 0.75em; }
 
+/* line 258, ../../../Sites/sass/stones/sass/screen.scss */
+#upload-stone-form li {
+  list-style: none; }
+
 /* --------------------------------------- RESPONSIVE ------------------------------------------- */

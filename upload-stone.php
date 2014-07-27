@@ -1,44 +1,58 @@
 <? include ("header.php") ?>
 <? include("manage_db.php") ?>
 
-	<form method="post" enctype="multipart/form-data">
+	<form method="post" id="upload-stone-form" enctype="multipart/form-data">
 	
-		Please select your images.
+		<li>Please select your images.<br>
 		<input id="fileupload" type="file" name="files[]" accept="image/*" capture="camera" data-url="server/php/" multiple>
 		
 		<div id="files-loaded">
-		Loaded files go here.
+			Loaded files go here.
 		</div>
 		
 		<textarea name="files-uploaded" id="files-uploaded"></textarea>
+		</li>
 		
-		Please name your stone.
-		<input type="text" name="name" id="name">
+		<li>
+			Please name your stone.
+			<input type="text" name="name" id="name">
+		</li>
 		
-		How many do you have?
-		<input type="number" name="quantity" id="quantity">
+		<li>
+			How many do you have?
+			<input type="number" name="quantity" id="quantity">
+		</li>
 		
-		What shape is your stone?
-		<input type="text" name="shape" id="shape">
+		<li>
+			What shape is your stone?
+			<input type="text" name="shape" id="shape">
+		</li>
 		
-		What size?
-		<input type="number" name="size" id="size">
+		<li>
+			What size?
+			<input type="text" name="size" id="size">
+		</li>
 		
-		What color?
-		<input type="text" name="color" id="color">
+		<li>
 		
-		What is its Mohs hardness?
-		<input type="number" name="mohs" id="mohs">
+			What color?
+			<input type="text" name="color" id="color">
+		</li>
 		
-		What else do you have to say?
-		<textarea name="notes" id="notes"></textarea>
+		<li>
+			What is its Mohs hardness?
+			<input type="number" name="mohs" id="mohs">
+		</li>
 		
-		<input type="submit" value="Save">
+		<li>
+			What else do you have to say?
+			<textarea name="notes" id="notes"></textarea>
+		</li>
 		
+		<li>
+			<input type="submit" value="Save">
+		</li>
 	</form>
 
 
-
-</body>
-
-</html>
+<? include ("footer.php"); ?>
