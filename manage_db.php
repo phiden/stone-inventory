@@ -1,5 +1,10 @@
 <?
 
+error_reporting(E_ALL);
+ini_set('display_errors', '1');
+
+// source: http://www.inmotionhosting.com/support/edu/website-design/using-php-and-mysql/php-insert-database
+
 // When someone submits a comment, they "POST" the comment to the server.
 // Therefore, we only want to insert a comment to the database if there
 // is POST data. The if statement below checks to see if someone has
@@ -57,12 +62,13 @@ if( $_POST )
   // Using the $_POST variable, we can get this data. This is what we're
   // doing below
   $stone_name = $_POST['name'];
+  $stone_images = $_POST['files-uploaded'];
   $stone_quantity = $_POST['quantity'];
   $stone_shape = $_POST['shape'];
   $stone_size = $_POST['size'];
   $stone_color = $_POST['color'];
   $stone_mohs = $_POST['mohs'];
-  $stone_used = $_POST['radio-choice'];
+  //$stone_used = $_POST['radio-choice'];
   $stone_notes = $_POST['notes'];
 
   // We now have all of the data that the user inputed. What you don't want
@@ -92,12 +98,13 @@ if( $_POST )
   // Because the single quotes are "escaped" (i.e. appended with a backslash), the
   // hackers attempt would fail.
   $stone_name = mysql_real_escape_string($stone_name);
+  $stone_images = mysql_real_escape_string($stone_images);
   $stone_quantity = mysql_real_escape_string($stone_quantity);
   $stone_shape = mysql_real_escape_string($stone_shape);
   $stone_size = mysql_real_escape_string($stone_size);
   $stone_color = mysql_real_escape_string($stone_color);
   $stone_mohs = mysql_real_escape_string($stone_mohs);
-  $stone_used = mysql_real_escape_string($stone_used);
+  //$stone_used = mysql_real_escape_string($stone_used);
   $stone_notes = mysql_real_escape_string($stone_notes);
   
   // We also need to get the article id, so we know if the comment belongs
@@ -108,7 +115,7 @@ if( $_POST )
   //
   // The article id is 1. To get data from the url, use the $_GET variable,
   // as in:
-  $articleid = $_GET['id'];
+  //$articleid = $_GET['id'];
 
   // We also want to add a bit of security here as well. We assume that the $article_id
   // is a number, but if someone changes the URL, as in this manner:
@@ -132,7 +139,7 @@ if( $_POST )
   // At this point, we've grabbed all of the data that we need. We now need
   // to update our SQL query. For example, instead of "John Smith", we'll
   // use $stone_name. Below is our updated SQL command:
-  $query = "INSERT INTO `stone_inventory`.`stones` (`id`, `name`, `quantity`, `shape`, `color`, `size`, `mohs`, `notes`, `used`) VALUES (NULL, '$stone_name', '$stone_quantity', '$stone_shape', '$stone_color', '$stone_size', '$stone_mohs', '$stone_notes', '$stone_used');";
+  $query = "INSERT INTO `stone_inventory`.`stones` (`id`, `images`, `name`, `quantity`, `shape`, `color`, `size`, `mohs`, `notes`) VALUES (NULL, '$stone_images', '$stone_name', '$stone_quantity', '$stone_shape', '$stone_color', '$stone_size', '$stone_mohs', '$stone_notes');";
         
   // Our SQL stated is stored in a variable called $query. To run the SQL command
   // we need to execute what is in the $query variable.
@@ -140,8 +147,9 @@ if( $_POST )
 
   // We can inform the user to what's going on by printing a message to
   // the screen using php's echo function
-  echo "<h2>Thank you for your Comment!</h2>";
-
+  echo "<h2>Yay! You did it!</h2>";
+  echo $stone_images;
+  
   // At this point, we've added the user's comment to the database, and we can
   // now close our connection to the database:
   mysql_close($con);
