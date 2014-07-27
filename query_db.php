@@ -1,7 +1,7 @@
 <?php
 
 //use the same connection structure as manage_db.php
-$con = mysql_connect("mysql.sophiadengo.com","phiden","athenaeum");
+$con = mysql_connect("localhost","root","root");
 
   // The statement above has just tried to connect to the database.
   // If the connection failed for any reason (such as wrong username

@@ -20,7 +20,7 @@ if( $_POST )
   // we are connecting to "localhost". inmoti6_myuser and mypassword
   // are the username and password we setup for our database when
   // using the "MySQL Database Wizard" within cPanel
-  $con = mysql_connect("mysql.sophiadengo.com","phiden","athenaeum");
+  $con = mysql_connect("localhost","root","root");
 
   // The statement above has just tried to connect to the database.
   // If the connection failed for any reason (such as wrong username
