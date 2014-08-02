@@ -46,7 +46,7 @@ $i=0;while ($i < $num) {
 	echo 
 	
 	"<b>$id</b><br>
-	$images<br>
+	<img src='$images'/><br>
 	$name<br>
 	$quantity<br>
 	$shape<br>
