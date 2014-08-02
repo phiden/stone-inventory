@@ -42,11 +42,6 @@ if( $_POST )
   // Let's first take a look at the sample INSERT code we received when we
   // used phpMyAdmin to create a test comment:
   //
-  /*
-  
-  INSERT INTO `stone_inventory`.`stones` (`id`, `name`, `quantity`, `shape`, `color`, `size`, `mohs`, `notes`, `used`) VALUES (NULL, '', '', '', '', '', '', 'This is a test.', '');
-  
-  */
   //
   // If we ran this command, it would insert the same exact comment from John
   // Smith every time. What we need to do is update this query so that it
