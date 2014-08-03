@@ -1,5 +1,5 @@
 <html>
-	<header>
+	<head>
 	
 		<title>The Stone Inventory</title>
 		<link href="css/screen.css" media="screen" rel="stylesheet" type="text/css" />
@@ -10,6 +10,6 @@
 		<script src="js/jquery.fileupload.js"></script>
 
 		<script src="js/stone-inventory.js"></script>
-	</header>
+	</head>
 	
 	<body>
