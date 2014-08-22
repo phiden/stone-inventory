@@ -2,6 +2,7 @@
 <? include("manage_db.php") ?>
 <? include "nav.php"; ?>
 
+	<h1>Add to your stone inventory</h1>
 	<form method="post" id="upload-stone-form" enctype="multipart/form-data">
 	
 		<li>
@@ -48,7 +49,7 @@
 		</li>
 		
 		<li>
-			<input id="upload-submit" type="submit" value="Save">
+			<input id="upload-submit" type="submit" value="Upload!">
 		</li>
 	</form>
 

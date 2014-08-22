@@ -26,7 +26,7 @@ $num=mysql_numrows($result);
 mysql_close($con);
 
 //print this sucker to the screen
-echo "<h1>Your Stone Inventory</h1>";
+echo "<h1>Your stone inventory</h1>";
 
 $i=0;while ($i < $num) {
 

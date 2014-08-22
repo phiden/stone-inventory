@@ -212,7 +212,8 @@ footer {
   display: table;
   text-align: left;
   width: 80%;
-  border: 1px solid purple; }
+  height: auto;
+  overflow: auto; }
 
 /* line 249, ../../../Sites/sass/stones/sass/screen.scss */
 #upload-stone-form li {
@@ -245,17 +246,18 @@ footer {
   background-color: white;
   padding: 10px;
   font-size: 1.05em;
+  height: auto !important;
   -webkit-border-radius: 10;
   -moz-border-radius: 10;
   border-radius: 10; }
 
 /* LOG IN */
-/* line 293, ../../../Sites/sass/stones/sass/screen.scss */
+/* line 294, ../../../Sites/sass/stones/sass/screen.scss */
 #content {
   margin: 0 auto;
   text-align: center; }
 
-/* line 299, ../../../Sites/sass/stones/sass/screen.scss */
+/* line 300, ../../../Sites/sass/stones/sass/screen.scss */
 #login-submit {
   margin-top: 15px;
   border: 2px solid black;
@@ -267,27 +269,27 @@ footer {
   border-radius: 10; }
 
 /* INVENTORY */
-/* line 312, ../../../Sites/sass/stones/sass/screen.scss */
+/* line 313, ../../../Sites/sass/stones/sass/screen.scss */
 .stone-article {
   width: 100%;
   height: auto;
   overflow: auto;
   margin-bottom: 30px; }
 
-/* line 320, ../../../Sites/sass/stones/sass/screen.scss */
+/* line 321, ../../../Sites/sass/stones/sass/screen.scss */
 .stone-image {
   width: 45%;
   float: left;
   margin-right: 30px; }
 
-/* line 328, ../../../Sites/sass/stones/sass/screen.scss */
+/* line 329, ../../../Sites/sass/stones/sass/screen.scss */
 .stone-image img {
   width: 100%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   border-radius: 50%; }
 
-/* line 334, ../../../Sites/sass/stones/sass/screen.scss */
+/* line 335, ../../../Sites/sass/stones/sass/screen.scss */
 .stone-info {
   width: 50%;
   float: right; }
