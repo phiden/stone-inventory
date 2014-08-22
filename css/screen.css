@@ -66,52 +66,58 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 /* ------- MATH ------- */
 /* ------- GET ON WITH YOUR BAD SELF ------- */
 /* apply a natural box layout model to all elements */
-/* line 53, ../../../Sites/sass/stones/sass/screen.scss */
+/* line 68, ../../../Sites/sass/stones/sass/screen.scss */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 57, ../../../Sites/sass/stones/sass/screen.scss */
+/* line 72, ../../../Sites/sass/stones/sass/screen.scss */
 .hidden {
   display: none; }
 
-/* line 63, ../../../Sites/sass/stones/sass/screen.scss */
+/* line 78, ../../../Sites/sass/stones/sass/screen.scss */
 .light {
   color: #bebebe; }
 
-/* line 68, ../../../Sites/sass/stones/sass/screen.scss */
+/* line 83, ../../../Sites/sass/stones/sass/screen.scss */
 .right {
   float: right; }
 
-/* line 73, ../../../Sites/sass/stones/sass/screen.scss */
+/* line 88, ../../../Sites/sass/stones/sass/screen.scss */
 .left {
   float: left; }
 
-/* line 78, ../../../Sites/sass/stones/sass/screen.scss */
+/* line 93, ../../../Sites/sass/stones/sass/screen.scss */
+.bold {
+  font-weight: bold; }
+
+/* line 98, ../../../Sites/sass/stones/sass/screen.scss */
 h1, h2 {
   font-family: "Pompiere", Helvetica, Arial, sans-serif; }
 
-/* line 83, ../../../Sites/sass/stones/sass/screen.scss */
+/* line 103, ../../../Sites/sass/stones/sass/screen.scss */
 h1 {
-  font-size: 6em; }
+  font-size: 2em;
+  padding-bottom: 30px; }
 
-/* line 88, ../../../Sites/sass/stones/sass/screen.scss */
+/* line 109, ../../../Sites/sass/stones/sass/screen.scss */
 h2 {
   padding-top: 30px;
   font-size: 2em; }
 
-/* line 94, ../../../Sites/sass/stones/sass/screen.scss */
+/* line 115, ../../../Sites/sass/stones/sass/screen.scss */
 h3 {
-  font-size: 1.05em;
+  font-size: 1.575em;
   font-weight: bold;
-  letter-spacing: .001em; }
+  letter-spacing: .001em;
+  padding-bottom: 15px; }
 
-/* line 101, ../../../Sites/sass/stones/sass/screen.scss */
+/* line 123, ../../../Sites/sass/stones/sass/screen.scss */
 h1 a {
   text-decoration: none; }
 
-/* line 106, ../../../Sites/sass/stones/sass/screen.scss */
+/* line 128, ../../../Sites/sass/stones/sass/screen.scss */
 body {
   width: 100%;
   min-height: 100%;
@@ -120,104 +126,70 @@ body {
   line-height: 1.8em;
   color: #1a1a1a; }
 
-/* line 117, ../../../Sites/sass/stones/sass/screen.scss */
+/* line 139, ../../../Sites/sass/stones/sass/screen.scss */
 header {
   text-align: center;
-  height: 300px;
+  height: auto;
   background-size: cover;
-  -webkit-box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1);
-  box-shadow: 0 1px 1px 1px rgba(0, 0, 0, 0.1); }
+  /*-webkit-box-shadow: 0 1px 1px 1px rgba(0,0,0,.1);
+  box-shadow: 0 1px 1px 1px rgba(0,0,0,.1);*/ }
 
-/* line 126, ../../../Sites/sass/stones/sass/screen.scss */
+/* line 148, ../../../Sites/sass/stones/sass/screen.scss */
 header h1 {
   margin-bottom: .5em; }
 
-/* line 131, ../../../Sites/sass/stones/sass/screen.scss */
+/* line 154, ../../../Sites/sass/stones/sass/screen.scss */
+#logo {
+  border: 3px solid black;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  margin-bottom: 30px; }
+
+/* line 161, ../../../Sites/sass/stones/sass/screen.scss */
 #global-wrapper {
   width: 80%;
   margin: 0px auto;
+  text-align: center;
   font-size: 1.05em;
   background: #fff;
   position: relative;
-  margin-top: 90px;
   padding: 30px; }
 
-/* line 145, ../../../Sites/sass/stones/sass/screen.scss */
-nav#global-nav {
-  width: 80%;
-  margin: 0 auto;
-  padding-top: 30px;
-  height: auto;
-  overflow: auto; }
+/* line 175, ../../../Sites/sass/stones/sass/screen.scss */
+#main-nav li {
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px; }
 
-/* line 155, ../../../Sites/sass/stones/sass/screen.scss */
-nav#global-nav li {
-  display: inline-block; }
-
-/* line 161, ../../../Sites/sass/stones/sass/screen.scss */
-nav#global-nav li a {
-  font-weight: 500; }
-
-/* line 166, ../../../Sites/sass/stones/sass/screen.scss */
-.main-nav {
-  margin-left: 20px;
-  margin-right: 20px;
+/* line 182, ../../../Sites/sass/stones/sass/screen.scss */
+#main-nav {
   padding-top: 2px;
   padding-bottom: 30px; }
 
-/* line 175, ../../../Sites/sass/stones/sass/screen.scss */
-.main-nav-logo a img {
-  vertical-align: middle;
-  width: 15%;
-  height: auto;
-  padding-top: 45px;
-  margin-left: 1%;
-  margin-right: 1%; }
-
-/* line 186, ../../../Sites/sass/stones/sass/screen.scss */
-.main-nav-logo a,
-.main-nav a {
-  color: #333333;
-  text-decoration: none;
-  font-size: 1.05em;
-  font-weight: 200;
-  font-family: "Raleway", Helvetica, Arial, sans-serif; }
-
-/* line 195, ../../../Sites/sass/stones/sass/screen.scss */
-.main-nav a:hover {
-  border-bottom: 2px solid white; }
-
-/* line 200, ../../../Sites/sass/stones/sass/screen.scss */
-.main-nav-logo a {
-  font-size: 3em; }
-
-/* line 205, ../../../Sites/sass/stones/sass/screen.scss */
-.main-nav.last {
-  margin-right: 0 !important; }
-
-/* line 210, ../../../Sites/sass/stones/sass/screen.scss */
+/* line 191, ../../../Sites/sass/stones/sass/screen.scss */
 p {
-  margin-bottom: 30px; }
+  margin-bottom: 7.5px; }
 
-/* line 215, ../../../Sites/sass/stones/sass/screen.scss */
+/* line 196, ../../../Sites/sass/stones/sass/screen.scss */
 #page-right {
   width: 70%;
   float: right;
   border: 1px solid red; }
 
-/* line 222, ../../../Sites/sass/stones/sass/screen.scss */
+/* line 203, ../../../Sites/sass/stones/sass/screen.scss */
 #page-left {
   width: 30%;
   float: left;
   border: 1px solid blue; }
 
-/* line 229, ../../../Sites/sass/stones/sass/screen.scss */
+/* line 210, ../../../Sites/sass/stones/sass/screen.scss */
 .homepage {
   background: white;
   width: 90%;
   margin: 0 auto; }
 
-/* line 239, ../../../Sites/sass/stones/sass/screen.scss */
+/* line 220, ../../../Sites/sass/stones/sass/screen.scss */
 footer {
   position: relative;
   text-align: center;
@@ -226,15 +198,98 @@ footer {
   padding-top: 20px;
   clear: both; }
 
-/* line 249, ../../../Sites/sass/stones/sass/screen.scss */
+/* line 230, ../../../Sites/sass/stones/sass/screen.scss */
 #footer-content {
   width: 100%;
   /*position:fixed;
   bottom:0;*/
   font-size: 0.75em; }
 
-/* line 257, ../../../Sites/sass/stones/sass/screen.scss */
+/* UPLOADER */
+/* line 240, ../../../Sites/sass/stones/sass/screen.scss */
+#upload-stone-form {
+  margin: 0 auto;
+  display: table;
+  text-align: left;
+  width: 80%;
+  border: 1px solid purple; }
+
+/* line 249, ../../../Sites/sass/stones/sass/screen.scss */
 #upload-stone-form li {
   list-style: none; }
+
+/* line 254, ../../../Sites/sass/stones/sass/screen.scss */
+#upload-stone-form label {
+  display: table-cell;
+  width: 50%; }
+
+/* line 260, ../../../Sites/sass/stones/sass/screen.scss */
+#upload-stone-form input {
+  width: 50%;
+  display: table-cell;
+  height: 30px; }
+
+/* line 268, ../../../Sites/sass/stones/sass/screen.scss */
+#files-uploaded, #notes {
+  display: inline;
+  width: 100%; }
+
+/* line 274, ../../../Sites/sass/stones/sass/screen.scss */
+#notes {
+  height: 120px; }
+
+/* line 279, ../../../Sites/sass/stones/sass/screen.scss */
+#upload-submit {
+  margin-top: 15px;
+  border: 2px solid black;
+  background-color: white;
+  padding: 10px;
+  font-size: 1.05em;
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10; }
+
+/* LOG IN */
+/* line 293, ../../../Sites/sass/stones/sass/screen.scss */
+#content {
+  margin: 0 auto;
+  text-align: center; }
+
+/* line 299, ../../../Sites/sass/stones/sass/screen.scss */
+#login-submit {
+  margin-top: 15px;
+  border: 2px solid black;
+  background-color: white;
+  padding: 10px;
+  font-size: 1.05em;
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 10; }
+
+/* INVENTORY */
+/* line 312, ../../../Sites/sass/stones/sass/screen.scss */
+.stone-article {
+  width: 100%;
+  height: auto;
+  overflow: auto;
+  margin-bottom: 30px; }
+
+/* line 320, ../../../Sites/sass/stones/sass/screen.scss */
+.stone-image {
+  width: 45%;
+  float: left;
+  margin-right: 30px; }
+
+/* line 328, ../../../Sites/sass/stones/sass/screen.scss */
+.stone-image img {
+  width: 100%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%; }
+
+/* line 334, ../../../Sites/sass/stones/sass/screen.scss */
+.stone-info {
+  width: 50%;
+  float: right; }
 
 /* --------------------------------------- RESPONSIVE ------------------------------------------- */

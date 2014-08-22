@@ -13,3 +13,6 @@
 	</head>
 	
 	<body>
+
+		<div id="global-wrapper">
+		

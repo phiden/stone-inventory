@@ -2,6 +2,7 @@
 
 //use the same connection structure as manage_db.php
 $con = mysql_connect("localhost","root","root");
+//$con = mysql_connect("mysql.sophiadengo.com","*","*");
 
   // The statement above has just tried to connect to the database.
   // If the connection failed for any reason (such as wrong username
@@ -25,11 +26,7 @@ $num=mysql_numrows($result);
 mysql_close($con);
 
 //print this sucker to the screen
-echo "<b>
-<center>Database Output</center>
-</b>
-<br>
-<br>";
+echo "<h1>Your Stone Inventory</h1>";
 
 $i=0;while ($i < $num) {
 
@@ -45,15 +42,22 @@ $i=0;while ($i < $num) {
 	
 	echo 
 	
-	"<b>$id</b><br>
-	<img src='$images'/><br>
-	$name<br>
-	$quantity<br>
-	$shape<br>
-	$color<br>
-	$size<br>
-	$mohs<br>
-	$notes<br>
+	"
+	<div class='stone-article'>
+	<div class='stone-image' id='$id'>
+		<img src='$images'/>
+	</div>
+	
+	<div class='stone-info'>
+		
+		<h3>$name</h3>
+		<p><span class='bold'>In stock:</span> $quantity</p>
+		<p><span class='bold'>Shape:</span> $shape</p>
+		<p><span class='bold'>Color:</span> $color | <span class='bold'>Size:</span> $size | <span class='bold'>Mohs:</span> $mohs</p>
+		<div class='notes'><span class='bold'>Remember: </span></br>$notes</div>
+	</div>
+	
+	</div>
 	";
 	
 	$i++;

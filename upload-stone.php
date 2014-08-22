@@ -1,56 +1,54 @@
 <? include ("header.php") ?>
 <? include("manage_db.php") ?>
+<? include "nav.php"; ?>
 
 	<form method="post" id="upload-stone-form" enctype="multipart/form-data">
 	
-		<li>Please select your images.<br>
-		<input id="fileupload" type="file" name="files[]" accept="image/*" capture="camera" data-url="server/php/" multiple>
+		<li>
+			<label>Please select your images.</label>
+			<input id="fileupload" type="file" name="files[]" accept="image/*" capture="camera" data-url="server/php/" multiple>
 		
-		<div id="files-loaded">
-			Loaded files go here.
-		</div>
-		
-		<textarea name="files-uploaded" id="files-uploaded"></textarea>
+			<textarea name="files-uploaded" id="files-uploaded"></textarea>
 		</li>
 		
 		<li>
-			Please name your stone.
+			<label>Please name your stone.</label>
 			<input type="text" name="name" id="name">
 		</li>
 		
 		<li>
-			How many do you have?
+			<label>How many do you have?</label>
 			<input type="number" name="quantity" id="quantity">
 		</li>
 		
 		<li>
-			What shape is your stone?
+			<label>What shape is your stone?</label>
 			<input type="text" name="shape" id="shape">
 		</li>
 		
 		<li>
-			What size?
+			<label>What size?</label>
 			<input type="text" name="size" id="size">
 		</li>
 		
 		<li>
 		
-			What color?
+			<label>What color?</label>
 			<input type="text" name="color" id="color">
 		</li>
 		
 		<li>
-			What is its Mohs hardness?
+			<label>What is its Mohs hardness?</label>
 			<input type="number" name="mohs" id="mohs">
 		</li>
 		
 		<li>
-			What else do you have to say?
+			<label>What else do you have to say?</label>
 			<textarea name="notes" id="notes"></textarea>
 		</li>
 		
 		<li>
-			<input type="submit" value="Save">
+			<input id="upload-submit" type="submit" value="Save">
 		</li>
 	</form>
 
