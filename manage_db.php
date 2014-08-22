@@ -142,9 +142,8 @@ if( $_POST )
 
   // We can inform the user to what's going on by printing a message to
   // the screen using php's echo function
-  echo "<h2>Yay! You did it!</h2>";
-  echo $stone_images;
-  
+  echo "<h3 class='alert'>Your stone's been saved to the database.<br/>Upload another?</h3>";
+    
   // At this point, we've added the user's comment to the database, and we can
   // now close our connection to the database:
   mysql_close($con);

@@ -1,8 +1,9 @@
 <? include ("header.php") ?>
-<? include("manage_db.php") ?>
 <? include "nav.php"; ?>
 
 	<h1>Add to your stone inventory</h1>
+	<? include("manage_db.php") ?>
+	
 	<form method="post" id="upload-stone-form" enctype="multipart/form-data">
 	
 		<li>
