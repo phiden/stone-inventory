@@ -3,12 +3,12 @@
 	session_start();
 	if(isset($_SESSION['loggedIn'])) { ?>
 
-		<? include ("header.php") ?>
-		<? include "nav.php"; ?>
+		<? include ("header.php"); ?>
+		<? include ("nav.php"); ?>
 		
 		<div id="database-data">
 		
-			<? include("query_db.php") ?>
+			<? include("query_db.php"); ?>
 			
 		</div>
 		
@@ -20,4 +20,4 @@
 			die();
 		}
 		
-		?>
+?>

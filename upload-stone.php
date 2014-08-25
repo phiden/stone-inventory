@@ -3,11 +3,11 @@
 	session_start();
 	if(isset($_SESSION['loggedIn'])) { ?>
 	
-	<?php include "header.php"; ?>
-	<?php include "nav.php"; ?>
+	<?php include ("header.php"); ?>
+	<?php include ("nav.php"); ?>
 
 	<h1>Add to your stone inventory</h1>
-	<?php include("manage_db.php") ?>
+	<?php include("manage_db.php"); ?>
 	
 	<form method="post" id="upload-stone-form" enctype="multipart/form-data">
 	
