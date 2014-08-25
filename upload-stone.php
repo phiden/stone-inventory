@@ -1,4 +1,4 @@
-<? include ("header.php") ?>
+<? include "header.php"; ?>
 <? include "nav.php"; ?>
 
 	<h1>Add to your stone inventory</h1>

@@ -22,6 +22,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             session_start();
             $session_key = session_id();
             
+            $_SESSION['loggedIn'] = 'youAreLogged';
+			$_SESSION['username'] = $username;
+            
             $query = $connection->prepare("INSERT INTO `sessions` ( `user_id`, `session_key`, `session_address`, `session_useragent`, `session_expires`) VALUES ( ?, ?, ?, ?, DATE_ADD(NOW(),INTERVAL 1 HOUR) );");
             $query->bind_param("ssss", $userid, $session_key, $_SERVER['REMOTE_ADDR'], $_SERVER['HTTP_USER_AGENT'] );
             $query->execute();
@@ -33,7 +36,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         
         else {
         
-        	
             header('Location: login.php');
             echo "<br>Failed miserably<br>";
         	echo $userid;
