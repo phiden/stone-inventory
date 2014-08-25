@@ -1,10 +1,23 @@
-<? include ("header.php") ?>
-<? include "nav.php"; ?>
+<?php 
 
-<div id="database-data">
+	session_start();
+	if(isset($_SESSION['loggedIn'])) { ?>
 
-	<? include("query_db.php") ?>
-	
-</div>
-
-<? include ("footer.php"); ?>
+		<? include ("header.php") ?>
+		<? include "nav.php"; ?>
+		
+		<div id="database-data">
+		
+			<? include("query_db.php") ?>
+			
+		</div>
+		
+		<? include ("footer.php"); ?>
+		
+		<?php } else {
+			
+			header('Location: login.php');
+			die();
+		}
+		
+		?>

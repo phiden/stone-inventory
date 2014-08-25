@@ -1,8 +1,13 @@
-<? include "header.php"; ?>
-<? include "nav.php"; ?>
+<?php 
+
+	session_start();
+	if(isset($_SESSION['loggedIn'])) { ?>
+	
+	<?php include "header.php"; ?>
+	<?php include "nav.php"; ?>
 
 	<h1>Add to your stone inventory</h1>
-	<? include("manage_db.php") ?>
+	<?php include("manage_db.php") ?>
 	
 	<form method="post" id="upload-stone-form" enctype="multipart/form-data">
 	
@@ -55,4 +60,12 @@
 	</form>
 
 
-<? include ("footer.php"); ?>
+	<?php include ("footer.php"); ?>
+
+<?php } else {
+
+	header('Location: login.php');
+	die();
+	
+}?>
+
